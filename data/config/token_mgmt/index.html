@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESP32 Token Add</title>
+    <link rel="stylesheet" href="/token_mgmt/style.css">
+</head>
+<body>
+    <h1>ESP32 Token Add</h1>
+    <form id="tokenForm" action="/token_mgmt/submit" method="POST">
+        <label for="token">Token:</label>
+        <input type="token" id="token" name="token" required>
+        <label for="action">Action:</label>
+        <select id="action" name="action" required>
+            <option value="add">Add</option>
+            <option value="remove">Remove</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+    <button id="back"> Back </button>
+    <p id="token_response"></p>
+    <script src="/token_mgmt/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ESP32 Camera</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>ESP32 Camera Stream</h1>
+    <div id="validation-container">
+        <input type="text" id="token-input" placeholder="Enter token" value=""/>
+        <button id="validate-button">Validate</button>
+    </div>
+    <span id="validation-result" class="invalid"></span>
+    <div>
+        <button id="toggle-stream-button">Toggle Stream</button>
+        <button id="toggle-flashlight-button">Toggle Flashlight</button>
+    </div>
+    <div>
+        <img id='stream' src='' style='display:none;' />
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
